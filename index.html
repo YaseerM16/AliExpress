@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="aliexpress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"
+        href="https://e7.pngegg.com/pngimages/484/52/png-clipart-aliexpress-computer-icons-y-miscellaneous-rectangle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="header-items"> <!--flexConatainer-->
+                <div class="header-logo"> <!--flex-->
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU8AAACWCAMAAABpVfqTAAAAhFBMVEUAAAD///+BgYF9fX35+fng4OB0dHTr6+vR0dFsbGx6enrNzc3X19ff39/7+/thYWG9vb00NDTIyMjv7+9KSkqPj49CQkKgoKCYmJhbW1toaGhRUVGzs7M9PT0rKyvExMSSkpK2tracnJwgICAXFxenp6cQEBAkJCSHh4dNTU03NzcvLy9TYJ1OAAAPGklEQVR4nO2da3uqvBKGiQVBBaWgRRQFVFpb////22Ry5qBg0/W2+8rzYRUIhHAzmZwGl5W8TIy0KbFeLCN9erEm/3UR/q80MTy1yvDUK8NTrwxPvTI89crw1CvDU68MT70yPPXK8NQrw1OvDE+9Mjz1yvDUK8NTrwxPvTI89crw1CvDU68MT70yPPXK8NQrw1OvDE+9Mjz1yvDUK8NTrwxPvTI89crw1Kuf5rn60dx/n36aZ/mjuf8+/TRPZ/+j2f86/TRPlPxo9r9OP8wzQ8ufzP736Wd57hBC3oNz3n/w/v9eT/M8IqysdXwPx8n2HLYXZOeKunV6suS/U0/zrABGuzYLnqlPidnbC75TD8/td4r/6/Q0z5jQmDaPU56XzJeY2eHUejE872hHabS8o1Tft/Qc/xPvzQ3PO4oYjmMjQfafx1hykH08/786VM/y5DiqRsJa4mmdpROAp315lXU8Hm+XZ4v+K/UkzwLDWeB/4kaKwrNu1Hk64flkMf+MnuTpYDgHaHIaMx4qTwsVbMvw7NcbZuOSLlCkJjV4LtZsy/DsV0YbZpUdqMFTuFfDs19LzKYeKIb470ZJavAUzb8envttGEVRNT/3nrHLFo5cpMMm9HwvP607zp2WXuD44bx5/DIJfdf188nowfBTPKfQGlm0c+QoaQrPpMyy8pNs3+O5cYMgcJpdhTKOY9eWHvZW2rxfESjlBk9+rV9f2eiDFS6/Im70dF9z0Wkr5V7G20IkhB/3UTT1FE8oPYyMoLRvcprC0+UnPrDPAElnUm1Qwz2XSFG8a5RoQvwQEnMCL0vlClu6wkrU3MRrq9SE61AqoGd44l4lHbnDEEiZFFF4QjdgRrbv13fy4DfpyCeBJjJW2YBV8UTgueW2SHlGrSuE4ebNJFY7Fqhxo/aczx09wzMRd3mX6ZHHfo4noedKR0jV/mK7O9Qhn6X66nGCLei4glEryO7SD3NHeQnUbO1FVgaNa4boGZ4wiqSVHExA/kmXNs8h9Z3V7pzvE0LcA+zps8XV9HDcb5jl+crZREE1gcIxHIvTLJ0lbI9UX2IHMank74nI60wSqGM4kQxGsHmCZyo/yAyeQErt5Tm9z5NWwILuESfGq9qZWg3n+14i+QyP08xZjyKkJ7Amek3tEHwKTMYKX3KLGWiwW1FNPmK0bLX+9/QEz1y8Zosaq+T3HvCMsBZc3kxcSWYASW9gBdui5+Ar1giaETwp7HCevMVJyb68HEjemMc3pebv6NMOWKRkUr/IaNz8whM8ZWDU30hzRPd5tiS1nq+IWzA1R97JJOzkamAxYoQ54ynwEWtUuh70rRzYVtfDgVv4xhTNeJ5QVUK+e+QQiN6e5knP8Nl10swA7LfWAjbiLMpTWNyqkQPoAgczdn5XrEXXlMQYjecJbzBtlEDUkG/wpE6zskr4K7rfxObbBYX+EXRQCU+p4Yh4kizon7psI+7oq5OE14cU+jSa5wFuKB2YqyX/Dk/aJJNeuTTzD81sR1M24fciPKUhJfQh35oXQOHxQJmYL8qas+HMK5dfzYSBGs0TbEhZk2RlJLrP097NVKmWQCokdKhlfFAFurrVcDaunV7jLa+ZIXZdcGAlq+VUjSKwBLectl7HAI3mCTdTXivUzoLtPeD5IPeUG678MNC17+q2QIXHkx/AUzh1uNnSdlXFMRlA4UbrKNURO5LmPY62lOJtxjZNY3nyqRChG7xntvc9nnwNT/ED3AybAowV2yhEwgbdEXQCbo5yLOR9iQ91WJW3XMJdjeVJ1jgc15HeO9yXtVDf5Enrmzpn1csTWh3eXkvvoLjHk054TVVwwv5n6uh11A96juR57i0km5v4Jk+2CqpMNfXyhLfL7VPi2ReMIvO0rK/rQqrd0tDi4xrFnQkPNZLntl06JnrG93h+8ezkqaY2YTn/wqI8pVlkmD1Z2ktJNhNSZpa/JqGtPgHVxzzrTrirkTzF7GxL1Dq+x1NYhdw4w4GuWR5IwH3fJs/mKOO+5mSGrh1JNbN7Eno1jqdoftuio8E2T+p/hvAk00bkXzHVRLA1F6ZZlqL/Ka9yuIz0IJ2Bm99OuPQl9GkczxLnHm6FCtAGzIr0477Dk7TKIcUq3CF5YW03Bg0KdDZaPDPpFQ9Q0Ve43oQejeMps5KViArZy3P2sGRiTplUe+7nULeBTgXmFk8yubJpXtKntO/JVn0JPRrFs2u9HXQWrBSewSiexFnhhkiaasKiHiVXT79x/B086eRco8ZXopVLlWGRVLjZQU6AdzYixnoUz/7JF49byuFpnoFUq0m3ifktylMeAPH1JEJs0eJJh65K57EUpd+gWB76LPjtEhTLa9GeXI4BGsOzNRUiNOee7AHPdYq1UkTSyaIDG6WTORHapjOeyBFdna2CuM2Txe+KBd89710R67XFJNmJ3w1nZAuTIYX6ofa9kh6xKair+I3f59kpSCbrbaIFCSTrk8718drQ+6qiXUM2jurgyRePvcn+9pUWbDSER5t0+YmuDrDx0JnmU98F+njvbAQ1mNA4nja9aZeg8Hia/kmeZOBli3mJd1KdYfRMjKTjSj4s7eLJgSqaioJhxQ7v8hZKgu3yodOYFfgRPAFInyuBCTLsC57kSYbt0jQ1aXKX0NxA2qWdgWgaO3l2zIos2YJI2Eoq+xLGLBeP4QmVpHexz6E8nuNZwoYaqkwMEjtI2LhZR3WewpZK3m7fQYfGurzUQ5jHahI3wl0jYdx80XCeFxlUWzADET3qz/fwJG1Hc507Qni0PeE8696gWBdWo5HCOI7trnqZiitQqPSErImYsYsTOfBrLiae3LHR/SN4Hs/n838TnM151m51UnmBXxZd0XI9mp3KKMqKjn7eeZ5kYZa8tBc3ptssq7bzkcFg1h/5/l3i+dtleOqV4alXhqdeGZ56ZXjqleGpV4anXhmeevV3eD4bofVv9Xd4Hh6f9wtkeOqV4alXf4fnM9GY/15/gucfkuGpV4anXhmeevXf8DyUw1vrf7HEotxjXIB3Q8N44p9Os/P08YkPhMMQghNeCx7+yZTd8ZmGqqtTy69GdwAqFr+zkJcZp31hjgd3QJzIIJ5T5F8nlTvow9Dizuq/i6r5Jgowz+HvJnv4g1cJSqosbwZ/VRC5ML3z9XrEwiEKOTDqze+pOx9DVuIH8Yydx+cwOf0xgnP+eeUYno+VEPNqlJKECpR5+3ymaHh8KMlxwE+ZDeK55O/vtHrNnWhlrXNnAcE/r4nvRNgw0sqa+84xQ34W1jXvmAU+kE1WVuaQinLl1SpF6xffyQneaeQs4Nmvk3d2VTE9hoEPRUvqA+vSuvpBCDU6zR0/y0Lpw2HKcwGhatMF5PsVokUZXk7IzULsW5IgABrbmVU51GY5z2tivZDwkDQ8v4Vf+DlvpeMXcGxTlzQr6/Qh4aSDePo8zDDwltnJQVtUbn0ILfTd7BRgb3hFBQrLfYa8qnyz3pCbZPDJoJvEfjmhFFmBUuTFVeKCvYYoP4UQOpO7Ntv0fTs85RADE3s4tmThJkmM55hmKNttkFtI4ZuUp4vjISoUnry6ZLsMRVl5y2ynylLrPY6TChxxEDpOuWnwzOO6RCQuN7ZWuFSOtwxpURbouqvLiMMqBnw5M4jnAS1PpAn0YRhNPpHAD0paxjjEIR6k3SDMXFzUPQ6+cqTvWnO0SClPeBQ7xHF1+EFWOAwkhCp6xQcW0GBt8X0wphn5mhM7MAdTmyhxKglazabXwDnjMCrsNSOcTH8wBqpWDgaB66snfbfIeYZ10WOITqkLCzx9+KgmQe/WF7jlIOc53tew9v0jQijCFhEANB9qFnfnVuTjR6SxhYWFQ4ehOtp1KRw5YHRjk6ijlIQLeT57VMvxMU+SQ43AI0cxQMIT+gNOnQI89spongRpwo9XZHBdWt/+Qvwn4UneqVfz86RYY4UnGPmmBgg8yXPua+tZwXcBJd5fDvi+YWj/87K14T4LxoHyvBRRENge5kkiGVFh4ZYHd2ECbIWOGh+eejgoi7ZHvs9yBBAhsXCMltwBqgDhCW0u5omvqZ9bzpPU93RZpyyW+MZu/W5lnq/IxYeXNr2cSuF5xq848CzKE+oD5vkB+bjYPu0BjeiI/jxuP8nT+5znCrmnl50DPIlHQIWF6+x1jrWiJVGf/lPm6ZD0bCl4Bh08wV0GIa7RfpWrIZnUf85r7+C7U7jxTeH5hhI4WjsSX/oMXOGJrfeAa/RK2M0nfo21R64cG0cy2Z/WQ43giU2oyRP8JOwr9pmKH55o8cRuXeK5oB8U1JmFpC7aEbQLcGrY4mlF+WmrriVRnqva8ea85ZR5XqBQoH6eM0QyavK8xUlCGN35kTeuETyDDvu0wbsjub6DqxKhri2eq5qlxPMKC20X7ClDeAt73KJ5cBTaqgZP0RQd2YoS5ZnVJZjzju2FtMbk9g4fY/XztNA1zqw2T583YENWsIbwfA+2q88d7oW0eHpod5zFscTTideHY70Xvt3Suqci80zC6X6/RYHiPy3Hnh1XMTbNcBlPbzsbm6Znx6vjFKKT2/U9zPOi3rOZLSYo3e0mC2ipAnR9PUyxUS7dw/pSv6PV11f9jvz0+JlcG/7TnVyv182a8ixdaNQlnnuo78s8z8sUv92uT4We4Em+k3FwExuQX+uAQuU1z3OdtJwVUn1fx/DNyxR/8OccuH/EeoGIdDxoozxJPjjCOsL+KXRmS4R8vOlF+OfAFxfO84vx3MaLPPJx5Dwf/tGfoyK9Qwiax/3WlY0/2Ts7EBi/xiGy+FeqZPukP7m2oTzXpBNHeMJzYvs8R26eR2591qr5AdTTPMfpvfF38BWhmPnApDuvpy17it7SvhWl99bGyOIoovUrqss2JLr2N81/Nnh2KicJKbplIyYVviE6KMoH3u2v8Syg2Z7agfX2rXnKwXLduhp8VP0fYqj6TTwjMZQKes0BPipbjvoNyW/pCB80uAOGmqDfxPMsLO7jjq/6+Nc/WX8cURN+E8//BxmeemV46pXhqVeGp14ZnnpleOqV4alXhqdeGZ56ZXjqleGpV4anXhmeemV46pXhqVeGp14ZnnpleOqV4alXhqdeGZ56ZXjqleGpV4anXhmeemV46pXhqVeGp14ZnnpleOrVxBr136MZPdCLlcxfjHRpXv0PSbrGIr0wxnwAAAAASUVORK5CYII="
+                        alt="">
+                </div>
+
+                <div class="header-components">
+                    <div class="header-components-div"> <!--Components flex-Container-->
+
+                        <div class="search-box-items">
+                            <div class="search-box"> <!--SearchBox flex-->
+                                <div class="search-bar">
+                                    <input type="text">
+                                </div>
+                                <div class="search-icon-div"><!--Searchbox icon-->
+                                    <img class="search-icon" style="height: 18px; width: 18px;" src="search-icon.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icons-box"> <!--Icon Box flex-->
+                            <div class="icon-box1"> <!--flex-->
+                                <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"
+                                    aria-hidden="false" focusable="false"
+                                    style="width: 32px; height: 32px; margin-right: 5px; margin-top: 10px;">
+                                    <path
+                                        d="M512 128a32 32 0 0 1 31.850667 28.928l0.149333 3.072V512a32 32 0 0 1-28.928 31.850667L512 544H160a32 32 0 0 1-3.072-63.850667L160 480l320-0.021333V160a32 32 0 0 1 28.928-31.850667L512 128z m-160 0A74.666667 74.666667 0 0 1 426.666667 202.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333A74.666667 74.666667 0 0 1 128 352v-149.333333A74.666667 74.666667 0 0 1 202.666667 128z m0 64h-149.333333a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667z m469.333333-64h-149.333333A74.666667 74.666667 0 0 0 597.333333 202.666667v149.333333a74.666667 74.666667 0 0 0 74.666667 74.666667h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333A74.666667 74.666667 0 0 0 821.333333 128z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667z m149.333333 405.333333h-149.333333a74.666667 74.666667 0 0 0-74.666667 74.666667v149.333333a74.666667 74.666667 0 0 0 74.666667 74.666667h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333a74.666667 74.666667 0 0 0-74.666667-74.666667z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667z m-320-64h-149.333333A74.666667 74.666667 0 0 0 128 672v149.333333A74.666667 74.666667 0 0 0 202.666667 896h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333a74.666667 74.666667 0 0 0-74.666667-74.666667z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667zM512 597.333333a32 32 0 0 1 31.850667 28.928l0.149333 3.072v234.666667a32 32 0 0 1-63.850667 3.072L480 864v-234.666667A32 32 0 0 1 512 597.333333z m352-117.333333a32 32 0 0 1 3.072 63.850667l-3.072 0.149333h-234.666667a32 32 0 0 1-3.072-63.850667l3.072-0.149333h234.666667z">
+                                    </path>
+                                </svg>
+
+                                <div><b>Download the<br> AliExpress app</b></div>
+                            </div>
+                            <div class=" icon-box2">
+                                <div class="flag-lang-container">
+                                    <div class="flag-lang-box"> <!--flex-->
+                                        <img class="flag-icon"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S4I2DIOx61xsHM9rT-SrMQqSP_C0cs1BF5my-uVwPQ&s"
+                                            alt="">
+                                        <div>
+                                            <span>EN/</span><br>
+                                            <b>INR</b>
+                                        </div>
+                                        <img class="arrowicon"
+                                            src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box3"> <!--flex-->
+                                <span>
+                                    <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"
+                                        aria-hidden="false" focusable="false" style="height: 32px; width: 32px;">
+                                        <path
+                                            d="M512 105.344a204.010667 204.010667 0 1 0 0 408 204.010667 204.010667 0 0 0 0-408z m0 66.666667a137.322667 137.322667 0 1 1 0 274.645333 137.322667 137.322667 0 0 1 0-274.666667z m114.88 384.426666c138.026667 0 257.877333 94.101333 291.093333 227.456l1.6 6.826667 19.626667 87.317333a33.322667 33.322667 0 0 1-64.256 17.536l-0.810667-2.944-19.605333-87.317333a233.344 233.344 0 0 0-221.504-182.122667l-6.144-0.085333h-229.76c-107.093333 0-200.149333 72.874667-226.218667 176.213333l-1.429333 5.994667-19.626667 87.317333a33.322667 33.322667 0 0 1-65.557333-11.605333l0.512-2.986667 19.626667-87.317333a300.010667 300.010667 0 0 1 285.696-234.197333l6.997333-0.085334h229.76z">
+                                        </path>
+                                    </svg>
+                                </span>
+
+                                <br>
+                                <div>
+                                    <span style="margin-top: 0;">
+                                        <p style="margin: 0;">Welcome</p>
+                                        <b style="font-size: 14px;">SignIN / Register</b>
+                                    </span>
+                                    <img class="arrowicon"
+                                        src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png"
+                                        alt="">
+                                </div>
+
+                            </div>
+                            <div class="icon-box4"> <!--flex-->
+                                <!--flex-->
+                                <img src="data:image/png;base64,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"
+                                    alt="">
+                                <div><b>Cart</b></div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="shop-section-container1">
+            <div class="shop-section-container2">
+                <div class="shop-section-container3"><!--flex-->
+                    <div class="shopboxes">
+                        <div class="shop-categorybox-1">
+                            <div>
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47h4Srb4IafN47yiU67PgmMiLiMB3Gep-38cvR91pt2n9YS4byZmxWh6SFpkWAAEbKKY&usqp=CAUalt=">
+                            </div>
+                            <p class="s">All Categories</p>
+                            <img style="float: right; margin-left: 68px; margin-top: 15px;" class="arrowicon"
+                                src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png" alt="">
+                        </div>
+                        <div class="shop-categorybox-2-container">
+                            <div class="shop-categorybox-2">
+                                <p>SuperDeals</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <p>Plus</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <p>New</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <p>Home & Garden</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <p>Hair Extensions & Wigs</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <p>Men's Clothing</p>
+                            </div>
+                            <div class="shop-categorybox-2">
+                                <div class="shop-categorybox-2-p">
+                                    <p>More</p>
+                                    <img class="arrowicon"
+                                        src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png"
+                                        alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category-img">
+        <img class="pc2023-site-info--site-image--kWOv6EV" fetchpriority="high"
+            src="https://ae01.alicdn.com/kf/S0fdd691113b74eb6bab15b8eba6093252.png_.webp" alt="">
+    </div>
+
+    <div class="category-section">
+        <div class="category-container"><!--flex-->
+            <div class="category-body">
+
+                <div class="category-img-container"><!--flex-->
+                    <span style="margin-bottom: 25px;">
+                        <strong style="font-size: 28px; margin-left: 200px; margin-bottom: 20px; font-weight: 600;">Shop
+                            by
+                            categories</strong>
+                    </span>
+                    <div class="category-line1">
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S1a23b2690ccb4bf184a36abfe2b84e10A/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Mens Clothing</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S1d99ec8263754e49a138aa37ac6585f4E/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Computer, Office & Education</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/Scff639e6d81b4ad98b694873cac35d7db/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Luggages & Bags</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S14bc071ed2414249b7d49f875f4dd486T/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Automotive & Motorcycle</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S430d82a8342b4cac909fc95d877ad6e1x/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <div>
+                                <p>Shoes</p>
+                            </div>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S58b9811454e14026b7261cc264cfff3fY/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Phones & Telecommunications</p>
+                        </div>
+                    </div>
+                    <div class="category-line2">
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/Sac77a905737b4bb4a4d1bb02a82ce040W/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Tools and Industrial</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S44f59311d0f7498f8a1d5c997e854dd0i/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Toys and Games</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S8d22e67f26b546478403f0b427d8cd19j/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Furniture</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/S53dc8295a6904051be85de8d544a2049G/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Security & Protection</p>
+                        </div>
+                        <div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/Sac77a905737b4bb4a4d1bb02a82ce040W/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Accessories</p>
+                        </div>
+                        <!--<div class="category1">
+                            <img src="https://ae01.alicdn.com/kf/Sa60c45c7822f4b90a3b3933121fbbcbcN/440x440.png_480x480.png_.webp"
+                                alt="">
+                            <p>Consumer Electronics</p>
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Shop List Items-->
+    <div class="shop-list">
+        <div class="shop-list-container"><!--flex-->
+            <div class="shop-list-inner-container">
+                <div class="shop-list-flex"><!--flex-->
+                    <div class="shop-list-item"> <!--ROW 1-->
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Se4bbdddf817e4290834f3710083c6f15q/250ML-Mini-Air-Humidifier-USB-Mute-Essential-Oil-Diffuser-Portable-Large-Spray-Car-Mist-Maker-with.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>250ML Mini Air Humidifier USB Mute Essential Oil Diffuser Portable Large
+                                            Spray Car Mist Maker with
+                                            LED Night Lamp Diffuser</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>7</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 3% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S5c437615a4b14d6a95498c1d6f6f5f724/3Holes-Winter-Warm-Unisex-Balaclava-Mask-Hat-Embroidery-Full-Face-Mask-Knitted-Cycling-Ski-Snowboard-Hat.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>3Holes Winter Warm Unisex Balaclava Mask Hat Embroidery Full Face Mask
+                                            Knitted Cycling Ski Snowboard Hat Cap Hip Hop
+                                            Beanie Gift</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>61</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 2% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Se672c38891c943d894139bed37499a3em/Girl-Large-Capacity-Aesthetic-Pencil-Bag-School-Case-Pen-Holder-Cute-Stationery-Simple-Style-Zipper-Pencil.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Girl Large Capacity Aesthetic Pencil Bag School Case Pen Holder Cute
+                                            Stationery Simple Style Zipper Pencil Pouch School
+                                            Supplies</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">2,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>330</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 2% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S412dbbcaa56b48e18bceaf6a4a67a11fO/Men-Airsoft-Paintball-Clothing-Military-Uniform-Tactical-Combat-Multicam-Camouflage-Hunting-Shirts-Pants-Elbow-Knee-Pads.png_350x350xz.png_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Men Airsoft Paintball Clothing Military Uniform Tactical Combat Multicam
+                                            Camouflage Hunting Shirts Pants Elbow/Knee Pads
+                                            Suits</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">4,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>1,421</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="shop-list-item"> <!--ROW 2-->
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sea03157945ec46fdbc92fe23db05a0e5N/-EAM-Women-Green-Irregular-Big-Size-Casual-Blazer-New-Lapel-Long-Sleeve-Loose-Fit-Jacket.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>[EAM] Women Green Irregular Big Size Casual Blazer New Lapel Long Sleeve
+                                            Loose Fit Jacket Fashion Spring Autumn 2024
+                                            1DF5044</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>3,818</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 2% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S72a761de13114af2bcfb1a2a6589f27b2/Valentines-Day-Gift-Crystal-Glass-Rose-Artificial-Flower-Silver-Gold-Rod-Rose-Flower-for-Girlfriend-Wedding.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Valentines Day Gift Crystal Glass Rose Artificial Flower Silver Gold Rod Rose
+                                            Flower for Girlfriend Wedding Gifts for
+                                            Guest</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>43</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S739e147e13f74727a7bf8f06641bae4f6/Fashion-Retro-Small-Square-Frame-Sunglasses-Women-Summer-Vintage-Punk-Rectangle-Black-Sun-Glasses-Eyewear-Sun.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Fashion Retro Small Square Frame Sunglasses Women Summer Vintage Punk
+                                            Rectangle Black Sun Glasses Eyewear Sun Shade
+                                            Glasses</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">4,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>16</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>super discount -53%</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S635cde2c0e2f49fe874d680db0d12f06e/1-Pair-Super-Thin-Gaming-Finger-Sleeve-Breathable-Fingertips-For-Pubg-Mobile-Games-Touch-Screen-Finger.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>1 Pair Super Thin Gaming Finger Sleeve Breathable Fingertips For Pubg Mobile
+                                            Games Touch Screen Finger Sleeves For
+                                            Gaming</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                        <span style="margin-left: 3px;">2,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>3.44</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="shop-list-item"> <!--ROW 3-->
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sf1e53f013e8a41bbad03856bb7260f90F/3D-Gradient-Color-Soft-Silicone-Charger-Case-for-Iphone-14-13-Pro-18w-20w-Charger-Head.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>3D Gradient Color Soft Silicone Charger Case for Iphone 14 13 Pro 18w 20w
+                                            Charger Head Protective Sleeve Cable
+                                            Protection Cover</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">3,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>55</b></span>
+                                        </div>
+                                    </div>
+
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sf3cd5e0f47834e28bb4ed8ac9dda1fe0I/YIKAZE-Men-Sport-LED-Watches-Top-Brand-Men-Digital-Clock-Multi-Functional-Rubber-Man-Fitnes-Athlete.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>YIKAZE Men Sport LED Watches Top Brand Men Digital Clock Multi-Functional
+                                            Rubber Man Fitnes Athlete Timekeeping
+                                            Electronic Watch</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>141</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 2% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S9dbd2fe9ad1d43c7b31cefd4aea9d46cM/Natural-Catnip-Cat-Rotatable-Catnip-Wall-Ball-Toys-Licking-Snacks-Healthy-Nutrition-Ball-Teeth-Cleaning-Catnip.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Natural Catnip Cat Rotatable Catnip Wall Ball Toys Licking Snacks Healthy
+                                            Nutrition Ball Teeth Cleaning Catnip Toy Pet
+                                            Supplies</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">3,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>31</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S3dffa48ab95440b683bb624b756e853ez/1-4pcs-Plush-Koala-Bear-Hair-Decoration-Hair-Clips-Hairpins-Animal-Hair-Claw-Clip-for-Girls.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>1/4pcs Plush Koala Bear Hair Decoration Hair Clips Hairpins Animal Hair Claw
+                                            Clip for Girls Headwear Koala Barrettes
+                                            Accessories</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                        <span style="margin-left: 3px;">2,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>67</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="shop-list-item"> <!--ROW 4-->
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Hd48f414c70bb4169a176d80628f8ef346/45-90Pcs-Mixed-Styles-Stainless-Steel-Eyebrow-Navel-Belly-Lip-Tongue-Nose-Piercing-Bar-Ring-Labret.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>45/90Pcs Mixed Styles Stainless Steel Eyebrow Navel Belly Lip Tongue Nose
+                                            Piercing Bar Ring Labret Barbell Tunnel Body
+                                            Jewelry</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">3,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>176</b></span>
+                                        </div>
+                                    </div>
+
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Se622fcc8e43e4f91807126358fb81116f/Mnini-Sanrioed-Cartoon-Kuromi-Hello-Kitty-Earring-Bracelets-Necklace-Jewelry-Making-DIY-Pendants-Keychain-Accessories.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Mnini Sanrioed Cartoon Kuromi Hello Kitty Earring Bracelets Necklace Jewelry
+                                            Making DIY Pendants Keychain Accessories</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>429</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 2% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sc7746e6ec04e400ba644aeb7b30eba98M/Custom-Name-Baby-Christmas-Bodysuits-Personalised-Deer-Newborn-Clothes-Boys-Girls-Long-Sleeve-Jumpsuit-Xmas-Party.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Custom Name Baby Christmas Bodysuits Personalised Deer Newborn Clothes Boys
+                                            Girls Long Sleeve Jumpsuit Xmas Party Infant
+                                            Outfits</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>282</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S7675b21c9e334417bb068b4b17d275f8G/1pcs-300x300x25mm-Studio-Acoustic-Foam-Soundproof-Pyramid-Sound-Absorption-Treatment-Panel-Tile-Protective-Sponge-Sealing-Strip.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>1pcs 300x300x25mm Studio Acoustic Foam Soundproof Pyramid Sound Absorption
+                                            Treatment Panel Tile Protective Sponge
+                                            Sealing Strips</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>31</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="shop-list-item"> <!--ROW 5-->
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Hab53edb50d8c4803933481d3b015dd6aQ/1PC-Street-Tattoo-Arm-Sleeves-Sun-UV-Protection-Arm-Cover-Seamless-Outdoor-Riding-Sunscreen-Arm-Sleeves.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>1PC Street Tattoo Arm Sleeves Sun UV Protection Arm Cover Seamless Outdoor
+                                            Riding Sunscreen Arm Sleeves Glover For Men
+                                            Women</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>49</b></span>
+                                        </div>
+                                    </div>
+
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/S108b007272c546a5b7716b55c485fa87I/Cartoon-Disney-Mickey-Minnie-Mouse-Studded-with-Zircon-Necklace-for-Women-Girl-Stainless-Steel-Chain-Sweet.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Cartoon Disney Mickey Minnie Mouse Studded with Zircon Necklace for Women
+                                            Girl Stainless Steel Chain Sweet Gift for
+                                            Friends Kids</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">2,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>106</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="d4">
+                                        <span>Extra 5% off with coins</span>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sc469d046a1e244698f58091f1f1c0ce6O/Winter-Warm-Plush-Insoles-Women-Men-Thicken-Thermal-Shoe-Pads-Self-Heated-Sports-Inserts-Soft-Cashmere.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Winter Warm Plush Insoles Women Men Thicken Thermal Shoe Pads Self Heated
+                                            Sports Inserts Soft Cashmere Snow Boots
+                                            Padding</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>98</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href=""><!--flex-->
+                                <div class="item-img"><!--flex-->
+                                    <img src="https://ae01.alicdn.com/kf/Sb659466357aa4a5ab887ea1f0ca126d2H/Belly-Button-Ring-For-Women-Trendy-Pink-Butterfly-Cute-Cat-Design-Sexy-Fashion-Navel-Rings-Stainless.jpg_350x350xz.jpg_.webp"
+                                        alt="">
+
+                                    <div class="item-svg"><!--flex-->
+                                        <svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="0808-商卡" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="BTN/加购" transform="translate(-13.000000, -14.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="ICON-购物车" transform="translate(12.000000, 12.000000)">
+                                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24"
+                                                            height="24"></rect>
+                                                        <path
+                                                            d="M7.0774212,18.9926395 C8.08766056,18.9926395 8.90662138,19.8116004 8.90662138,20.8218397 C8.90662138,21.8320791 8.08766056,22.6510399 7.0774212,22.6510399 C6.06718183,22.6510399 5.24822102,21.8320791 5.24822102,20.8218397 C5.24822102,19.8116004 6.06718183,18.9926395 7.0774212,18.9926395 Z M18.0726417,18.9926395 C19.082881,18.9926395 19.9018419,19.8116004 19.9018419,20.8218397 C19.9018419,21.8320791 19.082881,22.6510399 18.0726417,22.6510399 C17.0624023,22.6510399 16.2434415,21.8320791 16.2434415,20.8218397 C16.2434415,19.8116004 17.0624023,18.9926395 18.0726417,18.9926395 Z M1.17443267,2.49165197 C1.49906021,1.99148218 2.16773114,1.8495568 2.66767719,2.17451017 C3.64733797,2.81110008 4.3148453,3.82968869 4.50990294,4.9990376 L5.58968896,14.4573156 C5.65712883,15.0480484 6.15706794,15.4941603 6.75163783,15.4941603 L18.4694998,15.4941603 C19.0426792,15.4941603 19.5313891,15.0787511 19.6237222,14.5130576 L21.0652746,5.68116489 C21.1556925,5.12720531 21.6680507,4.74396606 22.2249912,4.81370734 C22.7263385,4.87648711 23.1001491,5.30310927 23.0992012,5.82942993 L23.0886183,5.95611179 L21.6982271,15.0573509 C21.4655833,16.5223425 20.2213553,17.6131451 18.7344285,17.6521812 L18.6576374,17.6532141 L6.54340335,17.6532141 C5.01073757,17.6532141 3.71149494,16.5257607 3.49485093,15.0033518 L3.48515488,14.9266622 L2.39237826,5.43927195 C2.32653231,4.86738366 2.01850839,4.3512228 1.55178243,4.02538491 L1.49121273,3.98481305 C0.991439345,3.65984946 0.849674211,2.99129799 1.17443267,2.49165197 Z M12.8245656,2.42485311 C13.380613,2.42485311 13.8456887,2.84726083 13.9002042,3.4163949 L13.9040917,3.50437917 L13.9038771,6.42252957 L16.8229909,6.42311514 C17.3628324,6.42338244 17.8133858,6.82083771 17.8903976,7.34444043 L17.9007352,7.45076264 C17.9284077,8.02592825 17.4997692,8.52156459 16.9108119,8.5782797 L16.8228276,8.58216722 L13.9038771,8.5814105 L13.9040917,11.5010665 C13.9038244,12.0409079 13.5063691,12.4914613 12.9827664,12.5684731 L12.8764442,12.5788107 C12.3012786,12.6064833 11.8056422,12.1778448 11.7489271,11.5888874 L11.7450396,11.5009031 L11.7449961,8.5814105 L8.82614033,8.58216718 C8.28629891,8.58189989 7.83574552,8.18444461 7.75873365,7.66084189 L7.74839606,7.55451968 C7.72072354,6.97935407 8.14936205,6.48371773 8.73831938,6.42700262 L8.82630365,6.4231151 L11.7449961,6.42252957 L11.7450396,3.50437917 C11.7450396,2.94543625 12.1698328,2.48570911 12.7141904,2.43042658 L12.8245656,2.42485311 Z"
+                                                            id="形状结合" fill="currentColor"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="item-detail"><!--flex-->
+                                    <div class="d1">
+                                        <p>Belly Button Ring For Women Trendy Pink Butterfly Cute Cat Design Sexy
+                                            Fashion Navel Rings Stainless Steel Piercing
+                                            Jewelry</p>
+                                    </div>
+                                    <div class="d2"><!--flex-->
+                                        <div class="ratings-solds"><!--flex-->
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+                                        <span style="margin-left: 3px;">1,000+ sold</span>
+                                    </div>
+                                    <div class="d3"><!--flex-->
+                                        <div>
+                                            <span><b>Rs.</b></span>
+                                            <span style="font-size: 24px;"><b>54</b></span>
+                                        </div>
+                                    </div>
+
+                                </div><!--flex-->
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container"><!--width 1130px-->
+            <div class="footer-container-1">
+                <div class="foot-contain-1-1">
+                    <div class="foot-contain-1-1-1">
+                        <b>Customer service</b>
+                    </div>
+                    <div class="foot-contain-1-1-2">
+                        <p>Help Center</p>
+                    </div>
+                    <div class="foot-contain-1-1-3">
+                        <p>Transaction Services</p>
+                    </div>
+                    <div class="foot-contain-1-1-4">
+                        <p>Agreement</p>
+                    </div>
+                    <div class="foot-contain-1-1-5">
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-contain-1-1-6">
+                        <p>EU/EEA/UK Consumers</p>
+                    </div>
+                    <div class="foot-contain-1-1-7">
+                        <p>Take our feedback survey</p>
+                    </div>
+                </div>
+                <div class="foot-contain-1-2">
+                    <div class="foot-contain-2-1">
+                        <b>Shopping with us</b>
+                    </div>
+                    <div class="foot-contain-2-2">
+                        <p>Making payments</p>
+                    </div>
+                    <div class="foot-contain-2-3">
+                        <p>Delivery options</p>
+                    </div>
+                    <div class="foot-contain-2-4">
+                        <p>Buyer Protection</p>
+                    </div>
+                </div>
+                <div class="foot-contain-1-3">
+                    <div class="foot-contain-3-1"><b>Collaborate with us</b></div>
+                    <div class="foot-contain-3-2">
+                        <p>Partnerships</p>
+                    </div>
+                    <div class="foot-contain-3-3">
+                        <p>Affiliate program</p>
+                    </div>
+                    <div class="foot-contain-3-4">
+                        <p>DS Center</p>
+                    </div>
+                    <div class="foot-contain-3-5">
+                        <p>Seller Log In</p>
+                    </div>
+                    <div class="foot-contain-3-6">
+                        <p>中国卖家入驻</p>
+                    </div>
+                    <div class="foot-contain-3-7">
+                        <p>Non-Chinese Seller</p>
+                    </div>
+                    <div class="foot-contain-3-8">
+                        <p>Registration</p>
+                    </div>
+                </div>
+                <div class="foot-contain-1-4">
+                    <b>Pay with</b>
+                    <div>
+                        <div class="foot-contain-4-1">
+                            <img src="https://img.alicdn.com/tfs/TB1xcMWdEKF3KVjSZFEXXXExFXa-68-48.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-2">
+                            <img src="https://ae01.alicdn.com/kf/S7b20ce778ba44e60a062008c35e98b57M/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-3">
+                            <img src="https://ae01.alicdn.com/kf/Sea8b6d9e957a4b4783785f087af30ba2r/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-4">
+                            <img src="https://ae01.alicdn.com/kf/S91ee3e0f4fde4535aad35f7c30f6bacfh/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-5"><img
+                                src="https://ae01.alicdn.com/kf/S8df1a1d99c8049d1b1a86c9a144719b6W/216x144.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="foot-contain-4-6"><img
+                                src="https://ae01.alicdn.com/kf/S173da9e53a234dcb9795cebd1856c4d7J/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-7"><img
+                                src="https://ae01.alicdn.com/kf/Sa4a89534ef694f1c8877ae3d864db6acz/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-8"><img
+                                src="https://ae01.alicdn.com/kf/S85aba413145f4b479fc18825603f87aaZ/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-9"><img
+                                src="https://ae01.alicdn.com/kf/S0321450614244c4dafba2517560de3b8s/216x144.png" alt="">
+                        </div>
+                        <div class="foot-contain-4-10"><img
+                                src="https://ae01.alicdn.com/kf/Sffbd9fb9807e42d9a32feda7bc09121cA/216x144.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-contain-1-5">
+                    <div class="foot-contain-5-1"><b>Stay Connected</b></div>
+                    <div class="foot-contain-5-2">
+                        <div class="foot-contain-5-2-1"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="foot-contain-5-2-2"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="foot-contain-5-2-3"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="foot-contain-5-2-4"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="foot-contain-5-2-5"><i class="fa-brands fa-facebook-messenger"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container-2"></div>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
